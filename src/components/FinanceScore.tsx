@@ -26,25 +26,25 @@ export function FinanceScore({ score, grade, reasons }: FinanceScoreProps) {
   return (
     <>
       <div 
-        className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl p-6 cursor-pointer"
+        className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl p-5 cursor-pointer"
         onClick={() => setShowDetails(true)}
       >
         <div className="flex items-center justify-between mb-2">
-          <span className="text-white/80">家計スコア</span>
+          <span className="text-white/80 text-sm">家計スコア</span>
           <TrendingUp className="w-5 h-5 text-white/80" />
         </div>
         <div className="flex items-baseline gap-3">
-          <span className={`${getScoreColor(score)} text-white`}>{score}</span>
-          <span className="text-white/60">/ 100点</span>
+          <span className={`${getScoreColor(score)} text-white text-3xl font-bold`}>{score}</span>
+          <span className="text-white/60 text-sm">/ 100点</span>
         </div>
         <div className="mt-2">
-          <span className={`${getGradeColor(grade)} text-white inline-flex items-center gap-1`}>
+          <span className={`${getGradeColor(grade)} text-white inline-flex items-center gap-1 text-sm`}>
             評価: {grade}ランク
             {(grade === 'A' || grade === 'B') && <CheckCircle className="w-4 h-4" />}
             {(grade === 'D' || grade === 'E') && <AlertCircle className="w-4 h-4" />}
           </span>
         </div>
-        <div className="mt-3 text-white/60 text-sm">
+        <div className="mt-3 text-white/60 text-xs">
           タップして詳細を表示
         </div>
       </div>

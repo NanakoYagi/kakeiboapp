@@ -52,18 +52,18 @@ export function CategoryTile({ category, spent, budget, icon, transactions }: Ca
         onClick={() => setShowDetails(true)}
       >
         <div className="flex items-center justify-between mb-2">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 min-w-0 flex-1">
             {getIcon()}
-            <span>{category}</span>
+            <span className="truncate">{category}</span>
           </div>
-          <ChevronRight className="w-4 h-4 text-gray-400" />
+          <ChevronRight className="w-4 h-4 text-gray-400 flex-shrink-0 ml-2" />
         </div>
         
         <div className="mb-2">
-          <div className={`${isOverBudget ? 'text-red-600' : 'text-gray-900'}`}>
+          <div className={`text-lg font-bold ${isOverBudget ? 'text-red-600' : 'text-gray-900'}`}>
             ¥{spent.toLocaleString()}
           </div>
-          <div className="text-sm text-gray-500">
+          <div className="text-xs text-gray-500">
             予算 ¥{budget.toLocaleString()}
           </div>
         </div>
@@ -81,7 +81,7 @@ export function CategoryTile({ category, spent, budget, icon, transactions }: Ca
               style={{ width: `${Math.min(percentage, 100)}%` }}
             />
           </div>
-          <span className={`text-sm ${isOverBudget ? 'text-red-600' : 'text-gray-600'}`}>
+          <span className={`text-xs flex-shrink-0 ${isOverBudget ? 'text-red-600' : 'text-gray-600'}`}>
             {percentage.toFixed(0)}%
           </span>
         </div>
