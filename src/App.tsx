@@ -229,22 +229,25 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 max-w-[375px] mx-auto relative">
+  <div className="min-h-screen bg-gray-50 max-w-[430px] mx-auto relative">
       <Toaster position="top-center" />
       
       <ScrollArea className="h-screen">
         <div className="pb-32">
           {/* アンケート誘導 - アプリ外の説明部分 */}
           <div className="px-3 py-3 bg-gradient-to-r from-amber-50 to-yellow-50 border-b-2 border-amber-200">
-            <p className="text-xs text-gray-800 mb-2 text-center leading-relaxed px-1">
+            <p className="text-sm sm:text-xs text-gray-800 mb-2 text-center leading-relaxed px-1">
               一通り触り終わったら以下のボタンから<br />アンケートに進んでください
             </p>
             <a
-                href="https://ux-gap-test-app.web.app/survey-2.html" 
-              target="_blank" 
+              href="https://ux-gap-test-app.web.app/survey-2.html"
+              target="_blank"
               rel="noopener noreferrer"
-              className="block"
-                >アンケートに進む
+              className="w-full inline-flex items-center justify-center rounded-lg bg-amber-500 px-4 py-3 text-white text-base sm:text-sm font-semibold shadow-sm hover:bg-amber-600 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 transition-colors"
+              role="button"
+              aria-label="アンケートに進む"
+            >
+              アンケートに進む
             </a>
           </div>
 
@@ -302,7 +305,7 @@ function App() {
       </ScrollArea>
 
       {/* 下部セクション: 瞬時入力エリア（固定） */}
-      <div className="fixed bottom-0 left-0 right-0 max-w-[375px] mx-auto">
+      <div className="fixed bottom-0 left-0 right-0 max-w-[430px] mx-auto">
         <QuickInput onAddTransaction={handleAddTransaction} />
       </div>
     </div>

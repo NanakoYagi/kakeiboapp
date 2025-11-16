@@ -46,7 +46,7 @@ export function QuickInput({ onAddTransaction }: QuickInputProps) {
           placeholder="金額を入力"
           value={amount}
           onChange={(e) => setAmount(e.target.value)}
-          className="flex-1 h-14 border-2 border-gray-300 rounded-lg text-center focus:outline-none focus:border-blue-500 px-3"
+          className="flex-1 h-14 border-2 border-gray-300 rounded-lg text-center focus:outline-none focus:border-blue-500 px-3 text-base"
         />
         
         <button
@@ -78,7 +78,7 @@ export function QuickInput({ onAddTransaction }: QuickInputProps) {
                 }`}>
                   <Icon className="w-5 h-5 text-white" />
                 </div>
-                <span className="text-xs text-gray-600">{category.label}</span>
+                <span className="text-sm text-gray-700">{category.label}</span>
               </button>
             );
           })}

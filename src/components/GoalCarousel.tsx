@@ -87,14 +87,14 @@ export function GoalCarousel({ goals }: GoalCarouselProps) {
         <>
           <button
             onClick={() => scroll('left')}
-            className="absolute left-2 top-1/2 -translate-y-1/2 z-10 w-8 h-8 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors"
+            className="absolute left-2 top-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors"
             aria-label="前へ"
           >
             <ChevronLeft className="w-5 h-5 text-gray-600" />
           </button>
           <button
             onClick={() => scroll('right')}
-            className="absolute right-2 top-1/2 -translate-y-1/2 z-10 w-8 h-8 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors"
+            className="absolute right-2 top-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors"
             aria-label="次へ"
           >
             <ChevronRight className="w-5 h-5 text-gray-600" />
@@ -103,16 +103,20 @@ export function GoalCarousel({ goals }: GoalCarouselProps) {
       )}
       
       {goals.length > 1 && (
-        <div className="flex justify-center gap-1.5 mt-3">
+        <div className="flex justify-center gap-2 mt-3">
           {goals.map((_, index) => (
             <button
               key={index}
               onClick={() => scrollToIndex(index)}
-              className={`w-1.5 h-1.5 rounded-full transition-colors ${
-                index === currentIndex ? 'bg-blue-600' : 'bg-gray-300'
-              }`}
+              className="p-2 -m-1"
               aria-label={`スライド ${index + 1} へ移動`}
-            />
+            >
+              <span
+                className={`block w-2 h-2 rounded-full transition-colors ${
+                  index === currentIndex ? 'bg-blue-600' : 'bg-gray-300'
+                }`}
+              />
+            </button>
           ))}
         </div>
       )}

@@ -30,7 +30,7 @@ export function FinanceScore({ score, grade, reasons }: FinanceScoreProps) {
         onClick={() => setShowDetails(true)}
       >
         <div className="flex items-center justify-between mb-2">
-          <span className="text-white/80 text-sm">家計スコア</span>
+          <span className="text-white/90 text-base">家計スコア</span>
           <TrendingUp className="w-5 h-5 text-white/80" />
         </div>
         <div className="flex items-baseline gap-3">
@@ -44,7 +44,7 @@ export function FinanceScore({ score, grade, reasons }: FinanceScoreProps) {
             {(grade === 'D' || grade === 'E') && <AlertCircle className="w-4 h-4" />}
           </span>
         </div>
-        <div className="mt-3 text-white/60 text-xs">
+        <div className="mt-3 text-white/80 text-sm">
           タップして詳細を表示
         </div>
       </div>

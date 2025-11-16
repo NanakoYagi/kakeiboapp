@@ -15,28 +15,28 @@ export function BalancePrediction({ data, currentBalance, predictedBalance }: Ba
     <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100 w-full overflow-hidden">
       <div className="mb-4">
         <div className="flex items-center justify-between mb-2">
-          <span className="text-gray-700 text-sm">残高予測</span>
-          <div className={`flex items-center gap-1 text-sm ${isPositive ? 'text-green-600' : 'text-red-600'}`}>
+          <span className="text-gray-700 text-base">残高予測</span>
+          <div className={`flex items-center gap-1 text-base ${isPositive ? 'text-green-600' : 'text-red-600'}`}>
             {isPositive ? <TrendingUp className="w-4 h-4" /> : <TrendingDown className="w-4 h-4" />}
-            <span className="text-xs">{isPositive ? '+' : ''}{difference.toLocaleString()}円</span>
+            <span className="text-sm">{isPositive ? '+' : ''}{difference.toLocaleString()}円</span>
           </div>
         </div>
         <div className="flex items-baseline gap-2">
           <span className="text-gray-900 text-xl font-bold">¥{predictedBalance.toLocaleString()}</span>
-          <span className="text-xs text-gray-500">月末予測</span>
+          <span className="text-sm text-gray-500">月末予測</span>
         </div>
       </div>
 
-      <ResponsiveContainer width="100%" height={160}>
-        <LineChart data={data} margin={{ top: 5, right: 8, left: 8, bottom: 5 }}>
+      <ResponsiveContainer width="100%" height={180}>
+        <LineChart data={data} margin={{ top: 8, right: 12, left: 12, bottom: 8 }}>
           <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
           <XAxis 
             dataKey="date" 
-            tick={{ fontSize: 11 }}
+            tick={{ fontSize: 12 }}
             stroke="#999"
           />
           <YAxis 
-            tick={{ fontSize: 11 }}
+            tick={{ fontSize: 12 }}
             stroke="#999"
             tickFormatter={(value) => `¥${(value / 10000).toFixed(0)}万`}
           />
