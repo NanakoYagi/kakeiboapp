@@ -19,7 +19,7 @@ export function GoalCarousel({ goals }: GoalCarouselProps) {
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
-      const scrollAmount = 340; // width + gap
+      const scrollAmount = Math.min(340, window.innerWidth - 32); // 画面幅に応じて調整
       const newIndex = direction === 'left' 
         ? Math.max(0, currentIndex - 1)
         : Math.min(goals.length - 1, currentIndex + 1);
@@ -34,7 +34,7 @@ export function GoalCarousel({ goals }: GoalCarouselProps) {
 
   const scrollToIndex = (index: number) => {
     if (scrollRef.current) {
-      const scrollAmount = 340;
+      const scrollAmount = Math.min(340, window.innerWidth - 32);
       setCurrentIndex(index);
       scrollRef.current.scrollTo({
         left: index * scrollAmount,
@@ -47,7 +47,7 @@ export function GoalCarousel({ goals }: GoalCarouselProps) {
   useEffect(() => {
     const handleScroll = () => {
       if (scrollRef.current) {
-        const scrollAmount = 340;
+        const scrollAmount = Math.min(340, window.innerWidth - 32);
         const index = Math.round(scrollRef.current.scrollLeft / scrollAmount);
         setCurrentIndex(index);
       }
