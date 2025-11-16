@@ -26,7 +26,7 @@ export function FinanceScore({ score, grade, reasons }: FinanceScoreProps) {
   return (
     <>
       <div 
-        className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl px-5 py-5 cursor-pointer"
+        className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl pl-[18px] pr-5 py-5 cursor-pointer"
         onClick={() => setShowDetails(true)}
       >
         <div className="flex items-center justify-between mb-2">
