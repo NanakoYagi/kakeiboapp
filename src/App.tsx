@@ -239,15 +239,12 @@ function App() {
             <p className="text-xs text-gray-800 mb-2 text-center leading-relaxed px-1">
               一通り触り終わったら以下のボタンから<br />アンケートに進んでください
             </p>
-            <a 
-              href="https://ux-gap-test-app.web.app/survey-2.html" 
+            <a
+                href="https://ux-gap-test-app.web.app/survey-1.html" 
               target="_blank" 
               rel="noopener noreferrer"
               className="block"
-            >
-              <button className="w-full py-2.5 bg-amber-500 hover:bg-amber-600 text-white text-sm font-semibold rounded-lg transition-colors shadow-sm">
-                アンケートに進む
-              </button>
+                >アンケートに進む
             </a>
           </div>
 
