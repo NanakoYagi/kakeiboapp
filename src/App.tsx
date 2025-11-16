@@ -229,7 +229,7 @@ function App() {
   };
 
   return (
-  <div className="min-h-screen bg-gray-50 max-w-[430px] mx-auto relative">
+  <div className="min-h-screen bg-gray-50 max-w-[375px] mx-auto relative">
       <Toaster position="top-center" />
       
       <ScrollArea className="h-screen">
@@ -305,7 +305,7 @@ function App() {
       </ScrollArea>
 
       {/* 下部セクション: 瞬時入力エリア（固定） */}
-      <div className="fixed bottom-0 left-0 right-0 max-w-[430px] mx-auto">
+      <div className="fixed bottom-0 left-0 right-0 max-w-[375px] mx-auto">
         <QuickInput onAddTransaction={handleAddTransaction} />
       </div>
     </div>
