@@ -61,10 +61,10 @@ export function GoalCarousel({ goals }: GoalCarouselProps) {
   }, []);
 
   return (
-    <div className="relative -mx-4 px-4">
+    <div className="relative px-4">
       <div 
         ref={scrollRef}
-        className="flex gap-3 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-2 -mx-4 px-4"
+        className="flex gap-3 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-2"
         style={{ 
           scrollbarWidth: 'none', 
           msOverflowStyle: 'none',

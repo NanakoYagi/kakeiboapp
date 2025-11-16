@@ -127,6 +127,12 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* モバイル幅での横スクロール防止 */
+  html, body, #root {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
 }
 
 /**

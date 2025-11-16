@@ -59,8 +59,8 @@ export function QuickInput({ onAddTransaction }: QuickInputProps) {
       </div>
       
       {/* 下段: カテゴリー選択 */}
-      <div className="overflow-x-auto scrollbar-hide -mx-3 px-3">
-        <div className="flex gap-2">
+      <div className="overflow-x-auto scrollbar-hide px-2">
+        <div className="flex gap-2 pr-2">
           {categories.map((category) => {
             const Icon = category.icon;
             const isSelected = selectedCategory === category.id;
