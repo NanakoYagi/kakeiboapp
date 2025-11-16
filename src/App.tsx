@@ -235,8 +235,8 @@ function App() {
       <ScrollArea className="h-screen">
         <div className="pb-32">
           {/* アンケート誘導 - アプリ外の説明部分 */}
-          <div className="px-3 py-3 bg-gradient-to-r from-amber-50 to-yellow-50 border-b-2 border-amber-200">
-            <p className="text-sm sm:text-xs text-gray-800 mb-2 text-center leading-relaxed px-1">
+          <div className="px-4 py-3 bg-gradient-to-r from-amber-50 to-yellow-50 border-b-2 border-amber-200">
+            <p className="text-sm sm:text-xs text-gray-800 mb-2 text-center leading-relaxed px-2 break-words [text-wrap:balance]">
               一通り触り終わったら以下のボタンから<br />アンケートに進んでください
             </p>
             <a
