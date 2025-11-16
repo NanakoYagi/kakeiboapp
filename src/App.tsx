@@ -246,7 +246,7 @@ function App() {
               className="block"
             >
               <button className="w-full py-2.5 bg-amber-500 hover:bg-amber-600 text-white text-sm font-semibold rounded-lg transition-colors shadow-sm">
-                📝 アンケートに進む
+                アンケートに進む
               </button>
             </a>
           </div>
