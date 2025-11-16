@@ -12,7 +12,7 @@ export function BalancePrediction({ data, currentBalance, predictedBalance }: Ba
   const difference = predictedBalance - currentBalance;
 
   return (
-    <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
+    <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100 w-full overflow-hidden">
       <div className="mb-4">
         <div className="flex items-center justify-between mb-2">
           <span className="text-gray-700 text-sm">残高予測</span>
@@ -28,7 +28,7 @@ export function BalancePrediction({ data, currentBalance, predictedBalance }: Ba
       </div>
 
       <ResponsiveContainer width="100%" height={160}>
-        <LineChart data={data} margin={{ top: 5, right: 5, left: -20, bottom: 5 }}>
+        <LineChart data={data} margin={{ top: 5, right: 8, left: 8, bottom: 5 }}>
           <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
           <XAxis 
             dataKey="date" 

@@ -42,7 +42,7 @@ export function CategoryTile({ category, spent, budget, icon, transactions }: Ca
   return (
     <>
       <div 
-        className={`rounded-xl p-4 cursor-pointer border-2 ${
+        className={`rounded-xl p-4 cursor-pointer border-2 w-full ${
           isOverBudget 
             ? 'bg-red-50 border-red-300' 
             : percentage > 80 
