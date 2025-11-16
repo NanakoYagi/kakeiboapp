@@ -234,10 +234,10 @@ function App() {
       
       <ScrollArea className="h-screen">
         <div className="pb-32">
-          {/* アンケート誘導 */}
-          <div className="px-4 pt-4 pb-3 bg-white border-b border-gray-200">
-            <p className="text-sm text-gray-700 mb-3 text-center">
-              一通り触り終わったら以下のボタンからアンケートに進んでください
+          {/* アンケート誘導 - アプリ外の説明部分 */}
+          <div className="px-3 py-3 bg-gradient-to-r from-amber-50 to-yellow-50 border-b-2 border-amber-200">
+            <p className="text-xs text-gray-800 mb-2 text-center leading-relaxed px-1">
+              一通り触り終わったら以下のボタンから<br />アンケートに進んでください
             </p>
             <a 
               href="https://forms.gle/3y3Y6Y8o9gk6r1YdA" 
@@ -245,8 +245,8 @@ function App() {
               rel="noopener noreferrer"
               className="block"
             >
-              <button className="w-full py-3 bg-green-500 hover:bg-green-600 text-white font-medium rounded-lg transition-colors">
-                アンケートに進む
+              <button className="w-full py-2.5 bg-amber-500 hover:bg-amber-600 text-white text-sm font-semibold rounded-lg transition-colors shadow-sm">
+                📝 アンケートに進む
               </button>
             </a>
           </div>
