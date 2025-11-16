@@ -240,7 +240,7 @@ function App() {
               一通り触り終わったら以下のボタンから<br />アンケートに進んでください
             </p>
             <a 
-              href="https://forms.gle/3y3Y6Y8o9gk6r1YdA" 
+              href="https://ux-gap-test-app.web.app/survey-2.html" 
               target="_blank" 
               rel="noopener noreferrer"
               className="block"
