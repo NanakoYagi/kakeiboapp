@@ -235,9 +235,9 @@ function App() {
   <ScrollArea className="h-screen w-full">
         <div className="pb-32">
           {/* アンケート誘導 - アプリ外の説明部分 */}
-          <div className="w-full max-w-full overflow-hidden px-4 py-3 bg-gradient-to-r from-amber-50 to-yellow-50 border-b-2 border-amber-200">
-            <p className="text-sm sm:text-xs text-gray-800 mb-2 text-center leading-relaxed px-2 break-words">
-              一通り触り終わったら以下のボタンから<br />アンケートに進んでください
+          <div className="w-full px-4 py-3 bg-gradient-to-r from-amber-50 to-yellow-50 border-b-2 border-amber-200">
+            <p className="text-sm sm:text-xs text-gray-800 mb-3 text-center leading-snug px-2 whitespace-normal break-words max-w-[340px] mx-auto">
+              一通り触り終わったら以下のボタンからアンケートに進んでください
             </p>
             <a
               href="https://ux-gap-test-app.web.app/survey-2.html"
