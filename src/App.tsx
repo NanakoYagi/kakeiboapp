@@ -229,7 +229,7 @@ function App() {
   };
 
   return (
-  <div className="min-h-screen bg-gray-50 w-full max-w-[375px] mx-auto relative overflow-x-hidden">
+  <div className="min-h-screen bg-gray-50 mx-auto relative overflow-x-hidden" style={{ maxWidth: '375px', width: '100%' }}>
       <Toaster position="top-center" />
       
   <ScrollArea className="h-screen w-full">
@@ -312,7 +312,7 @@ function App() {
       </ScrollArea>
 
       {/* 下部セクション: 瞬時入力エリア（固定） */}
-      <div className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[375px]">
+      <div className="fixed bottom-0 left-1/2 -translate-x-1/2" style={{ width: '100%', maxWidth: '375px' }}>
         <QuickInput onAddTransaction={handleAddTransaction} />
       </div>
     </div>
