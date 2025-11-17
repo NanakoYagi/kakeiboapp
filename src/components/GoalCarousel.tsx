@@ -19,14 +19,14 @@ export function GoalCarousel({ goals }: GoalCarouselProps) {
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
-      const scrollAmount = Math.min(340, window.innerWidth - 32); // 画面幅に応じて調整
+      const containerWidth = scrollRef.current.clientWidth; // 親幅に基づく
       const newIndex = direction === 'left' 
         ? Math.max(0, currentIndex - 1)
         : Math.min(goals.length - 1, currentIndex + 1);
       
       setCurrentIndex(newIndex);
       scrollRef.current.scrollTo({
-        left: newIndex * scrollAmount,
+        left: newIndex * containerWidth,
         behavior: 'smooth',
       });
     }
@@ -34,10 +34,10 @@ export function GoalCarousel({ goals }: GoalCarouselProps) {
 
   const scrollToIndex = (index: number) => {
     if (scrollRef.current) {
-      const scrollAmount = Math.min(340, window.innerWidth - 32);
+      const containerWidth = scrollRef.current.clientWidth;
       setCurrentIndex(index);
       scrollRef.current.scrollTo({
-        left: index * scrollAmount,
+        left: index * containerWidth,
         behavior: 'smooth',
       });
     }
@@ -47,8 +47,8 @@ export function GoalCarousel({ goals }: GoalCarouselProps) {
   useEffect(() => {
     const handleScroll = () => {
       if (scrollRef.current) {
-        const scrollAmount = Math.min(340, window.innerWidth - 32);
-        const index = Math.round(scrollRef.current.scrollLeft / scrollAmount);
+        const containerWidth = scrollRef.current.clientWidth;
+        const index = Math.round(scrollRef.current.scrollLeft / containerWidth);
         setCurrentIndex(index);
       }
     };

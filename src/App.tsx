@@ -235,7 +235,7 @@ function App() {
   <ScrollArea className="h-screen w-full">
         <div className="pb-32">
           {/* アンケート誘導 - アプリ外の説明部分 */}
-          <div className="w-full px-4 py-3 bg-gradient-to-r from-amber-50 to-yellow-50 border-b-2 border-amber-200">
+          <div className="w-full px-4 py-3 bg-gradient-to-r from-amber-50 to-yellow-50 border-b-2 border-amber-200" style={{width: '100%'}}>
             <p className="text-sm sm:text-xs text-gray-800 mb-3 text-center leading-snug px-2 whitespace-normal break-words max-w-[340px] mx-auto">
               これはLPで紹介されていたアプリです。一通り操作し終わったら以下のボタンからアンケートに進んでください。
             </p>

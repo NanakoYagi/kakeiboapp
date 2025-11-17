@@ -25,7 +25,7 @@ export function GoalMeter({ current, target, category, daysLeft }: GoalMeterProp
   };
 
   return (
-    <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100 w-[calc(100vw-2rem)] max-w-[320px] snap-center">
+    <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100 w-[calc(100%-2rem)] max-w-full snap-center">
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-2">
           <Target className="w-4 h-4 text-blue-500" />
