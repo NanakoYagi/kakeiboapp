@@ -229,10 +229,10 @@ function App() {
   };
 
   return (
-  <div className="min-h-screen bg-gray-50 max-w-[375px] mx-auto relative">
+  <div className="min-h-screen bg-gray-50 w-[min(100vw,375px)] mx-auto relative overflow-x-hidden">
       <Toaster position="top-center" />
       
-      <ScrollArea className="h-screen">
+  <ScrollArea className="h-screen w-full">
         <div className="pb-32">
           {/* アンケート誘導 - アプリ外の説明部分 */}
           <div className="w-full max-w-full overflow-hidden px-4 py-3 bg-gradient-to-r from-amber-50 to-yellow-50 border-b-2 border-amber-200">
@@ -305,7 +305,7 @@ function App() {
       </ScrollArea>
 
       {/* 下部セクション: 瞬時入力エリア（固定） */}
-      <div className="fixed bottom-0 left-0 right-0 max-w-[375px] mx-auto">
+      <div className="fixed bottom-0 left-1/2 -translate-x-1/2 w-[min(100vw,375px)]">
         <QuickInput onAddTransaction={handleAddTransaction} />
       </div>
     </div>
