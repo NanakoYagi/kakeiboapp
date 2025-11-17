@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Utensils, Car, ShoppingCart, Home, Coffee, Film, Plus } from 'lucide-react';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 
 interface QuickInputProps {
   onAddTransaction: (amount: number, category: string) => void;

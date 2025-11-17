@@ -38,7 +38,7 @@ export function BalancePrediction({ data, currentBalance, predictedBalance }: Ba
           <YAxis 
             tick={{ fontSize: 12 }}
             stroke="#999"
-            tickFormatter={(value) => `¥${(value / 10000).toFixed(0)}万`}
+            tickFormatter={(value: number) => `¥${(value / 10000).toFixed(0)}万`}
           />
           <Tooltip 
             formatter={(value: number) => [`¥${value.toLocaleString()}`, '']}
