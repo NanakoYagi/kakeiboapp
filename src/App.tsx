@@ -243,7 +243,7 @@ function App() {
               href="https://ux-gap-test-app.web.app/survey-2.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full flex items-center justify-center rounded-lg bg-amber-500 px-4 py-3 text-white text-base sm:text-sm font-semibold shadow-sm hover:bg-amber-600 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 transition-colors"
+              className="w-full flex items-center justify-end rounded-lg bg-blue-600 px-4 py-3 text-white text-base sm:text-sm font-semibold shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 transition-colors text-right"
               role="button"
               aria-label="アンケートに進む"
             >
