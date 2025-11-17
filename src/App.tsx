@@ -253,7 +253,7 @@ function App() {
           </div>
 
           {/* アプリヘッダー */}
-          <div className="mt-6 border-b border-gray-200 px-4 py-10 shadow-sm" style={{backgroundColor: '#71D0D1'}}>
+          <div className="mt-10 border-b border-gray-200 px-4 py-10 shadow-sm" style={{backgroundColor: '#71D0D1'}}>
             <div className="flex items-center justify-between">
               <h1 className="text-xl font-bold" style={{color: '#ffffff'}}>いつでも家計簿</h1>
             </div>
