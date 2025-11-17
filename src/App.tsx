@@ -253,13 +253,11 @@ function App() {
           </div>
 
           {/* アプリヘッダー */}
-          <div className="bg-white border-b border-gray-200 px-4 py-4 shadow-sm">
+          <div className=" border-b border-gray-200 px-4 py-4 shadow-sm" style={{backgroundColor: '#71D0D1'}}>
             <div className="flex items-center justify-between">
-              <h1 className="text-xl font-bold text-gray-900">家計簿アプリ</h1>
-              <div className="text-sm text-gray-500">11月</div>
+              <h1 className="text-xl font-bold text-gray-900">いつでも家計簿</h1>
             </div>
           </div>
-
           {/* 上部セクション: 現状把握 */}
           <div className="px-4 pt-6 space-y-4 mb-6">
             <FinanceScore 
