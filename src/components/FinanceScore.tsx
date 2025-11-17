@@ -26,9 +26,10 @@ export function FinanceScore({ score, grade, reasons }: FinanceScoreProps) {
   return (
     <>
       <div 
-        className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl pl-[18px] pr-5 py-5 cursor-pointer"
+        className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl py-5 cursor-pointer"
         onClick={() => setShowDetails(true)}
       >
+        <div className="pl-[18px] pr-5">
         <div className="flex items-center justify-between mb-2">
           <span className="text-white/90 text-base">家計スコア</span>
           <TrendingUp className="w-5 h-5 text-white/80" />
@@ -46,6 +47,7 @@ export function FinanceScore({ score, grade, reasons }: FinanceScoreProps) {
         </div>
         <div className="mt-3 text-white/80 text-sm">
           タップして詳細を表示
+        </div>
         </div>
       </div>
 
