@@ -244,7 +244,7 @@ function App() {
           </div>
           {/* 上部セクション: 現状把握 */}
           <div className="px-4 pt-6 space-y-4 mb-6">
-            <div style={{ maxWidth: '80%' }}>
+            <div style={{ maxWidth: '70%' }}>
               <FinanceScore 
                 score={financeData.score}
                 grade={financeData.grade}
@@ -261,10 +261,10 @@ function App() {
           </div>
 
           {/* 中部セクション: 未来シミュレーション */}
-          <div className="px-4 space-y-4 mb-6" style={{ maxWidth: '80%' }}>
+          <div className="px-4 space-y-4 mb-6" style={{ maxWidth: '70%' }}>
             <div className="flex items-center gap-2 mb-2">
               <div className="w-1 h-6 bg-purple-500 rounded-full" />
-              <span className="text-gray-700" style={{ maxWidth: '80%' }}>未来予測</span>
+              <span className="text-gray-700" style={{ maxWidth: '70%' }}>未来予測</span>
             </div>
             
             <BalancePrediction
