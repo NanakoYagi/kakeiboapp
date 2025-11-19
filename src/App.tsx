@@ -236,7 +236,7 @@ function App() {
   <ScrollArea className="h-screen w-full">
         <div className="pb-64">
           {/* アプリヘッダー */}
-          <div className="px-4 py-6 shadow-sm" style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'}}>
+          <div className="px-4 py-6 shadow-sm" style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', height: '80px' }}>
             <div className="flex items-center gap-3">
               <Wallet className="w-8 h-8 text-white" />
               <h1 className="text-2xl font-bold text-white">いつでも家計簿</h1>
@@ -244,7 +244,7 @@ function App() {
           </div>
           {/* 上部セクション: 現状把握 */}
           <div className="px-4 pt-6 space-y-4 mb-6">
-            <div style={{ maxWidth: '50%' }}>
+            <div style={{ maxWidth: '55%' }}>
               <FinanceScore 
                 score={financeData.score}
                 grade={financeData.grade}
