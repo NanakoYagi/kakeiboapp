@@ -242,6 +242,22 @@ function App() {
               <h1 className="text-2xl font-bold text-white" style={{lineHeight: '72px'}}>いつでも家計簿</h1>
             </div>
           </div>
+
+          {/* 説明文とアンケートボタン */}
+          <div className="px-4 pt-6 pb-4 space-y-4">
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+              <p className="text-sm text-gray-700 leading-relaxed">
+                これは先ほどLPで紹介されていた「いつでも家計簿」の実際の画面です。一通り操作が終わったら下の「アンケートに進む」を押してください
+              </p>
+            </div>
+            <button 
+              onClick={() => window.location.href = '#survey'}
+              className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02]"
+            >
+              アンケートに進む
+            </button>
+          </div>
+
           {/* 上部セクション: 現状把握 */}
           <div className="px-4 pt-6 space-y-4 mb-6">
             <div style={{ maxWidth: '55%' }}>
