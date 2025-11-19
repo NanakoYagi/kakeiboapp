@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { TrendingUp, AlertCircle, CheckCircle } from 'lucide-react';
+import { AlertCircle, CheckCircle } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './ui/dialog';
 
 interface FinanceScoreProps {
@@ -11,12 +11,6 @@ interface FinanceScoreProps {
 export function FinanceScore({ score, grade, reasons }: FinanceScoreProps) {
   const [showDetails, setShowDetails] = useState(false);
 
-  const getGradeColor = (grade: string) => {
-    if (grade === 'A' || grade === 'B') return 'text-green-500';
-    if (grade === 'C') return 'text-yellow-500';
-    return 'text-red-500';
-  };
-
   const getScoreColor = (score: number) => {
     if (score >= 80) return 'text-green-500';
     if (score >= 60) return 'text-yellow-500';
@@ -26,28 +20,23 @@ export function FinanceScore({ score, grade, reasons }: FinanceScoreProps) {
   return (
     <>
       <div 
-        className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl py-5 cursor-pointer"
+        className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl p-6 cursor-pointer"
         onClick={() => setShowDetails(true)}
       >
-        <div className="pl-[18px] pr-5">
-        <div className="flex items-center justify-between mb-2">
-          <span className="text-white/90 text-base">家計スコア</span>
-          <TrendingUp className="w-5 h-5 text-white/80" />
+        <div className="text-white/80 text-base mb-3">家計スコア</div>
+        <div className="flex items-baseline gap-2 mb-3">
+          <span className="text-white text-5xl font-bold">{score}</span>
+          <span className="text-white/70 text-lg">/ 100点</span>
         </div>
-        <div className="flex items-baseline gap-3">
-          <span className={`${getScoreColor(score)} text-white text-3xl font-bold`}>{score}</span>
-          <span className="text-white/60 text-sm">/ 100点</span>
-        </div>
-        <div className="mt-2">
-          <span className={`${getGradeColor(grade)} text-white inline-flex items-center gap-1 text-sm`}>
+        <div className="mb-4">
+          <span className="text-white inline-flex items-center gap-1.5 text-base">
             評価: {grade}ランク
-            {(grade === 'A' || grade === 'B') && <CheckCircle className="w-4 h-4" />}
-            {(grade === 'D' || grade === 'E') && <AlertCircle className="w-4 h-4" />}
+            {(grade === 'A' || grade === 'B') && <CheckCircle className="w-5 h-5" />}
+            {(grade === 'D' || grade === 'E') && <AlertCircle className="w-5 h-5" />}
           </span>
         </div>
-        <div className="mt-3 text-white/80 text-sm">
+        <div className="text-white/70 text-sm">
           タップして詳細を表示
-        </div>
         </div>
       </div>
 
