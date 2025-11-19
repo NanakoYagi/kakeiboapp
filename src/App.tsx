@@ -243,12 +243,14 @@ function App() {
             </div>
           </div>
           {/* 上部セクション: 現状把握 */}
-          <div className="px-4 pt-6 space-y-4 mb-6" style={{ maxWidth: '50%' }}>
-            <FinanceScore 
-              score={financeData.score}
-              grade={financeData.grade}
-              reasons={financeData.reasons}
-            />
+          <div className="px-4 pt-6 space-y-4 mb-6">
+            <div style={{ maxWidth: '50%' }}>
+              <FinanceScore 
+                score={financeData.score}
+                grade={financeData.grade}
+                reasons={financeData.reasons}
+              />
+            </div>
             
             <GoalCarousel goals={goalsData} />
             
