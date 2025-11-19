@@ -243,7 +243,7 @@ function App() {
             </div>
           </div>
           {/* 上部セクション: 現状把握 */}
-          <div className="px-4 pt-6 space-y-4 mb-6">
+          <div className="px-4 pt-6 space-y-4 mb-6" style={{ width: '50%' }}>
             <FinanceScore 
               score={financeData.score}
               grade={financeData.grade}
@@ -259,7 +259,7 @@ function App() {
           </div>
 
           {/* 中部セクション: 未来シミュレーション */}
-          <div className="px-4 space-y-4 mb-6">
+          <div className="px-4 space-y-4 mb-6" style={{ width: '50%' }}>
             <div className="flex items-center gap-2 mb-2">
               <div className="w-1 h-6 bg-purple-500 rounded-full" />
               <span className="text-gray-700">未来予測</span>
@@ -273,7 +273,7 @@ function App() {
           </div>
 
           {/* カテゴリー別支出ハイライト */}
-          <div className="px-4 space-y-4" style={{ marginBottom: '200px' }}>
+          <div className="px-4 space-y-4" style={{ marginBottom: '250px' }}>
             <div className="flex items-center gap-2 mb-2">
               <div className="w-1 h-6 bg-orange-500 rounded-full" />
               <span className="text-gray-700">支出ハイライト（TOP2）</span>
