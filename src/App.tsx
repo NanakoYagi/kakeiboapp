@@ -276,11 +276,11 @@ function App() {
           <div className="px-4 space-y-4 mb-6">
             <div className="flex items-center gap-2 mb-2">
               <div className="w-1 h-6 bg-orange-500 rounded-full" />
-              <span className="text-gray-700">支出ハイライト（TOP3）</span>
+              <span className="text-gray-700">支出ハイライト（TOP2）</span>
             </div>
             
             <div className="space-y-3">
-              {categoryData.map((category, index) => (
+              {categoryData.slice(0, 2).map((category, index) => (
                 <CategoryTile
                   key={index}
                   category={category.category}
