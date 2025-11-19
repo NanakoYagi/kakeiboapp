@@ -7,6 +7,7 @@ import { CategoryTile } from './components/CategoryTile';
 import { QuickInput } from './components/QuickInput';
 import { Toaster } from './components/ui/sonner';
 import { ScrollArea } from './components/ui/scroll-area';
+import { Wallet } from 'lucide-react';
 
 interface Transaction {
   id: string;
@@ -234,28 +235,11 @@ function App() {
       
   <ScrollArea className="h-screen w-full">
         <div className="pb-48">
-          {/* アンケート誘導 - アプリ外の説明部分 */}
-          <div className="w-full px-4 py-3 bg-gradient-to-r from-amber-50 to-yellow-50 border-b-2 border-amber-200" style={{width: '100%'}}>
-            <p className="text-sm sm:text-xs text-gray-800 mb-3 text-center leading-snug px-2 whitespace-normal break-words max-w-[340px] mx-auto">
-              これはLPで紹介されていたアプリです。一通り操作し終わったら以下のボタンからアンケートに進んでください。
-            </p>
-            <a
-              href="https://ux-gap-test-app.web.app/survey-2.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full flex items-center justify-end rounded-lg px-4 py-3 text-white text-base sm:text-sm font-semibold shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 text-right"
-              style={{ backgroundColor: '#2563eb' }}
-              role="button"
-              aria-label="アンケートに進む"
-            >
-              アンケートに進む
-            </a>
-          </div>
-
           {/* アプリヘッダー */}
-          <div className="mt-10 border-b border-gray-200 px-4 py-10 shadow-sm" style={{backgroundColor: '#71D0D1'}}>
-            <div className="flex items-center justify-between">
-              <h1 className="text-xl font-bold" style={{color: '#ffffff'}}>いつでも家計簿</h1>
+          <div className="px-4 py-6 shadow-sm" style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'}}>
+            <div className="flex items-center gap-3">
+              <Wallet className="w-8 h-8 text-white" />
+              <h1 className="text-2xl font-bold text-white">いつでも家計簿</h1>
             </div>
           </div>
           {/* 上部セクション: 現状把握 */}
