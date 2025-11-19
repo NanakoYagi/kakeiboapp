@@ -26,7 +26,7 @@ export function FinanceScore({ score, grade, reasons }: FinanceScoreProps) {
         <div className="text-white/80 text-base mb-3">家計スコア</div>
         <div className="flex items-baseline gap-2 mb-3">
           <span className="text-white text-5xl font-bold">{score}</span>
-          <span className="text-white/70 text-lg">/ 100点</span>
+          <span className="text-lg" style={{ color: '#ffffff' }}>/ 100点</span>
         </div>
         <div className="mb-4">
           <span className="text-white inline-flex items-center gap-1.5 text-base">
@@ -35,7 +35,7 @@ export function FinanceScore({ score, grade, reasons }: FinanceScoreProps) {
             {(grade === 'D' || grade === 'E') && <AlertCircle className="w-5 h-5" />}
           </span>
         </div>
-        <div className="text-white/70 text-sm">
+        <div className="text-sm" style={{ color: '#ffffff' }}>
           タップして詳細を表示
         </div>
       </div>
