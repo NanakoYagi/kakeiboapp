@@ -260,7 +260,7 @@ function App() {
 
           {/* 上部セクション: 現状把握 */}
           <div className="px-4 pt-6 space-y-4 mb-6">
-            <div style={{ maxWidth: '55%', marginLeft: 'auto', marginRight: 'auto' }}>
+            <div style={{ maxWidth: '55%'}}>
               <FinanceScore 
                 score={financeData.score}
                 grade={financeData.grade}
