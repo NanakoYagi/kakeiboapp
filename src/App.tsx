@@ -275,7 +275,7 @@ function App() {
           </div>
 
           {/* カテゴリー別支出ハイライト */}
-          <div className="px-4 space-y-4" style={{ marginBottom: '250px' }}>
+          <div className="px-4 space-y-4" style={{ marginBottom: '250px', maxWidth: '55%' }}>
             <div className="flex items-center gap-2 mb-2">
               <div className="w-1 h-6 bg-orange-500 rounded-full" />
               <span className="text-gray-700">支出ハイライト（TOP2）</span>
