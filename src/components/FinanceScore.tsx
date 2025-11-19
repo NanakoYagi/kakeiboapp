@@ -20,22 +20,22 @@ export function FinanceScore({ score, grade, reasons }: FinanceScoreProps) {
   return (
     <>
       <div 
-        className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl p-5 cursor-pointer"
+        className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl p-6 cursor-pointer"
         onClick={() => setShowDetails(true)}
       >
-        <div className="text-sm mb-3" style={{ color: '#ffffff' }}>家計スコア</div>
-        <div className="flex items-baseline gap-1 mb-2">
-          <span className="text-white text-4xl font-bold">{score}</span>
-          <span className="text-base" style={{ color: '#ffffff' }}>/ 100点</span>
+        <div className="text-white/80 text-base mb-3">家計スコア</div>
+        <div className="flex items-baseline gap-2 mb-3">
+          <span className="text-white text-5xl font-bold">{score}</span>
+          <span className="text-lg" style={{ color: '#ffffff' }}>/ 100点</span>
         </div>
-        <div className="mb-3">
-          <span className="text-white inline-flex items-center gap-1.5 text-sm">
+        <div className="mb-4">
+          <span className="text-white inline-flex items-center gap-1.5 text-base">
             評価: {grade}ランク
-            {(grade === 'A' || grade === 'B') && <CheckCircle className="w-4 h-4" />}
-            {(grade === 'D' || grade === 'E') && <AlertCircle className="w-4 h-4" />}
+            {(grade === 'A' || grade === 'B') && <CheckCircle className="w-5 h-5" />}
+            {(grade === 'D' || grade === 'E') && <AlertCircle className="w-5 h-5" />}
           </span>
         </div>
-        <div className="text-xs" style={{ color: '#ffffff' }}>
+        <div className="text-sm" style={{ color: '#ffffff' }}>
           タップして詳細を表示
         </div>
       </div>
