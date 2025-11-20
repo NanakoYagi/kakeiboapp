@@ -251,7 +251,7 @@ function App() {
               </p>
             </div>
             <button 
-              onClick={() => window.location.href = '#survey'}
+              onClick={() => window.location.assign('https://ux-gap-test-app.web.app/survey-2.html')}
               className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-black font-bold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02]"
             >
               アンケートに進む
