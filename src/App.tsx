@@ -252,7 +252,7 @@ function App() {
           </div>
 
           {/* アプリヘッダー */}
-          <div className="px-4 py-6 shadow-sm" style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', height: '72px'}}>
+          <div className="px-4 py-6 shadow-sm" style={{background: '#61CBCC', height: '72px'}}>
             <div className="flex items-center gap-3">
               <Wallet className="w-8 h-8 text-white" />
               <h1 className="text-2xl font-bold text-white" style={{lineHeight: '72px'}}>いつでも家計簿</h1>
